@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aspectj>
+    <aspects>
+        <aspect name="aspectj.aspect.TransactionAspect"/>
+        <weaver options="-verbose -showWeaveInfo">
+            <include within="aspectj.aspect.*"/>
+            <include within="aspectj.targets.*"/>
+        </weaver>
+    </aspects>
+</aspectj>
